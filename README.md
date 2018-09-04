@@ -17,11 +17,8 @@ First OF All RUN NPM Install
 
 #Progressive  web  app  features:#  
 1.Add  to  Home  screen  popup  
-
 2.Manifest.json 
-
 3.Offline  availability  with service-worker.js 
-
 4.If  vendor  updates  the  assets  or  resources  then  app  gets  updated  on  client  
 
 5.Push  notifications,  your  OLX  app  will  send  context-based  alerts  to  tell  users 
