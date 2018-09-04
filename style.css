@@ -1,0 +1,412 @@
+
+@font-face {
+    font-family: myFont;
+    src: url(fonts/font.woff2);
+}
+
+body{
+	font-family: myfont;
+}
+
+
+
+
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+
+
+
+
+.header{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 10px 16px;
+    background-color: white;
+
+        z-index: 1;
+    }
+
+
+    .searchTab {
+
+    border: 3px solid white;
+    border-radius: 50px;
+    width: 400px;
+    height: 40px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 3px 12px -5px black;
+}
+
+
+
+.searchTab img {
+    height: 30px;
+    float: right;
+    margin-top: 2px;
+}
+
+.searchTab input {
+    background-color: transparent;
+    width: 200px;
+    height: 30px;
+    font-size: 24px;
+    float: left;
+    padding-left: 20px;
+}
+
+
+.searchTab input:focus {
+    outline:none;
+}
+
+
+#searchImg:hover{
+
+    cursor: pointer;
+}
+
+#title{
+    
+        align-self: center;
+        padding-left: 10px;
+} 
+
+#Account{
+
+    height: 100px;
+    width:100px
+}
+
+
+.account{
+
+height: 50px;
+width: 120px;
+
+align-self:center;
+background: transparent;
+border: 2px solid lightgray;
+color: #2f73d8;
+border-radius: 5px;
+}
+
+.SubmitAD{
+
+    height: 50px;
+    width: 120px;
+    
+    align-self:center;
+    background: transparent;
+    border: 2px solid lightgray;
+    color: #ff8300;
+    border-radius: 5px;
+
+
+}
+
+.SearchDiv{
+
+    background: url("Images/searchbackground.png") center center no-repeat;
+    background-repeat: no-repeat;        
+    position: relative;        
+    margin-left: auto;      
+    margin-right: auto;   
+    
+    display: flex;
+   flex-direction: row;
+   justify-content:space-evenly;
+   flex-wrap: wrap;
+}
+
+#cities{
+    width: 30%;
+    height: 50px;
+
+}
+
+#searchInput{
+
+    width: 50%;
+    border-radius: 5px;
+}
+
+
+#searchInput,
+#searchInput::-webkit-input-placeholder {
+    font-size: 18px;
+   
+}
+
+#cities,
+#cities::-webkit-input-placeholder {
+    font-size: 18px;
+   
+}
+
+
+
+
+/* Catogeries Start Here */
+
+.allAds{
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.heading{
+    font-size: 50px;
+}
+
+
+
+.card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+
+  .card{
+
+    margin: 5px;
+    border-radius: 10px;
+  }
+
+
+  .card img{
+    width: 100%;
+    height: 250px;
+    
+  } 
+
+
+  .card-title {
+    margin-top:0px;
+    font-weight: 700;
+    font-size: 1.65em;
+  }
+
+
+  #card-price{
+
+    color: #ff8300;
+  }
+
+
+
+
+  .product_view .modal-dialog{max-width: 800px; width: 100%;}
+  .pre-cost{text-decoration: line-through; color: #a5a5a5;}
+  .space-ten{padding: 10px 0;}
+
+  .fade {
+    opacity: 0;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+}
+
+#cross{
+
+margin-right: 150px;
+}
+
+
+.loader {
+    background: none repeat scroll 0 0 rgb(252, 252, 252);
+    position: fixed;
+    display: block;
+    opacity: 0.5;
+    z-index: 1000001; 
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+        
+    }
+    
+    .loader img {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: -500px 0px 0px -100px;
+    width: 200px;
+    }
+
+
+div.alert-messages {
+    position: fixed;
+    top: 50px;
+    left: 25%;
+    right: 25%;
+    z-index: 7000;
+  }
+
+
+  .titleDiv{
+    background-color: #c1c000;
+    border-radius: 5px 20px 5px;
+    text-align: center;
+  
+  }
+
+
+  .titleDiv h1{
+   
+    font-size: 50px;
+    padding: 5px;
+  
+  }
+
+
+  /* Catogreis */
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-bottom: 24px;
+    justify-content:  space-between;
+
+  }
+
+
+
+
+
+  .catogriesRow{
+
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-between;
+
+
+
+
+  }
+  .catogriesRow li {
+
+    text-align: center;
+    line-height: 16px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    transition: background-color 0.5s ease;
+    border-radius: 10px;
+
+
+
+  }
+
+  .catogriesRow li:hover {
+
+    background-color: #eeeeee;
+    cursor: pointer;
+
+
+  }
+
+  .catogriesRow li img {
+
+    width: 100px;
+    height: 100px;
+
+  }
+
+
+  .catogriesRow li a{
+    color: black;
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 5px;
+  }
+
+
+  .titleDiv:hover{
+
+    cursor: pointer;
+
+  }
+  /* Catageris */
+
+
+  @media only screen and (max-width: 375px) {
+    .SearchDiv{
+
+        background: url("Images/searchbackground.png") center center no-repeat;
+        background-repeat: no-repeat;        
+        position: relative;        
+        margin-left: auto;      
+        margin-right: auto;   
+         display: flex;
+       flex-direction: row;
+       justify-content:space-evenly;
+       flex-wrap: wrap;
+    }
+
+    
+    
+    
+    #cities{
+        width: 40%;
+        height: 50px;
+    
+    }
+    
+    #searchInput{
+    
+        width: 30%;
+        border-radius: 5px;
+        height: 50px;
+
+    }
+    
+    
+    #searchInput,
+    #searchInput::-webkit-input-placeholder {
+        font-size: 10px;
+       
+    }
+    
+    #cities,
+    #cities::-webkit-input-placeholder {
+        font-size: 10px;
+       
+    }
+}
+
+#offlineMessage h2 {
+
+    text-align: center;
+}
+
+#offlineMessage{
+    text-align: center;
+}
+
+
+#dropdown{
+
+    height: 25px;
+    vertical-align: middle;
+}

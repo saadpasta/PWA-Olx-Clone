@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <!-- Css -->
+     <link rel="stylesheet" href="style.css">
+
+        <!-- Manifest -->
+        <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+    <div class="Main">
+<div class="header container">
+
+    <img src="Images/logo.png" height="100px" width="100px">
+    <h3 id="title">Pakistan Largest Market Place</h3>
+    
+    <button class="account" onclick="window.location='My account/account.html'">My Account</button>
+    <button class="SubmitAD" onclick="window.location='Submit Add/ad.html'">Submit An Ad</button>
+
+</div>
+ 
+<div class="SearchDiv container jumbotron">
+
+    <select class="form-control" id="cities">
+        <option value="Pakistan">All Pakistan</option>
+        <option value="karachi">Karachi</option>
+        <option value="lahore">Lahore</option>
+        <option value="islamabad">Islamabad</option>
+      </select>
+
+      <input type="text" placeholder="    3,14,222 Ads Near You" id="searchInput">
+
+
+
+      <button class="btn btn-info btn-lg" onclick="search()">
+        <span class="glyphicon glyphicon-search"></span> Search 
+      </button>
+
+
+</div>
+
+    <h1>Add</h1>
+  
+    
+
+    </div>
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BootStarp -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDEsL6stJ4-PQ2LV-rzvzWFGHHxmhSqVDs",
+        authDomain: "pakistan-olx-1.firebaseapp.com",
+        databaseURL: "https://pakistan-olx-1.firebaseio.com",
+        projectId: "pakistan-olx-1",
+        storageBucket: "pakistan-olx-1.appspot.com",
+        messagingSenderId: "719427536807"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>

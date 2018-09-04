@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+     <!-- Css -->
+     <link rel="stylesheet" href="style.css">
+
+        <!-- Manifest -->
+        <link rel="manifest" href="manifest.json">
+        <!-- Add to home screen for Safari on iOS -->
+          <meta name="" content="yes">
+          <meta name="" content="black">
+          <meta name="" content="OLX Pak">
+          <link rel="" href="Images/192.png">
+          <meta name="Olx Pak" content="Images/144.png">
+          <meta name="Olx Pak" content="#5C307F">
+        <!-- Manifest ENd -->
+
+</head>
+<body onload="showAddOnload()">
+    <div class="Main">
+
+<div class="header" id="myHeader">
+
+        <a href="index.html" id="img"><img src="Images/logo.png" height="100px" width="100px"></a>
+        <h3 id="title">Pakistan Largest Market Place</h3>
+    
+    <button class="account" onclick="window.location='My account/account.html'">My Account</button>
+    <button class="SubmitAD" onclick="window.location='Submit Add/ad.html'">Submit An Ad</button>
+
+
+</div>
+
+
+ 
+<div class="SearchDiv container jumbotron">
+
+        <div class="searchTab">
+        <input type="search" id="txtSearch" placeholder="Search"  style="border:none">
+        <img src="Images/search.png" onclick="searchAds()" id="searchImg">
+    </div>
+
+</div>
+<div class="titleDiv">
+        <h1 class="heading container" id="heading"  data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Categories<img src="Images/dropdown.png" id="dropdown"></h1>
+</div>
+
+<div class="container categories" id="catogries">
+        <div class="collapse collapse in" id="collapseExample" >
+            <div>
+                <ul class="catogriesRow">
+
+                        <li>
+                                <a onclick="allads()"><img src="Images/logo.png" alt=""></a>All Ads
+                        </li>
+    
+                    <li>
+                        <a onclick="searchbike()"><img src="Images/bike.png" alt=""></a>Bikes
+                    </li>
+                    <li >
+                         <a onclick="searchCars()"><img src="Images/car.png" alt=""></a>Cars
+                    </li>
+                    <li>
+                            <a onclick="searchMobiles()"><img src="Images/mobile.jpg" alt=""></a>Mobiles
+                    </li>
+                    <li>
+                            <a onclick="searchFurnitures()"><img src="Images/furniture.png" alt=""></a>Furniture
+                    </li>
+                    <li>
+                            <a onclick="searchAnimals()"><img src="Images/animals.png" alt=""></a>Animals
+                    </li>
+                    <li>
+                            <a onclick="searchKids()"><img src="Images/images.png" alt=""></a>Kids
+                    </li>
+                </ul>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+<div class="titleDiv">
+<h1 class="heading container" id="headingAds" > Ads</h1>
+</div>
+
+<div class="allAds" id="allAds">
+  
+    
+
+
+    <div id="offlineMessage" style="display: none;"> 
+        <h2>View Your Offline Ads</h2>
+        <button  class="btn btn-danger" onclick="window.location.href='My account/account.html'">View Offline Ads</button>
+
+    </div>
+</div>
+
+<div class="loader" style="display: block;" id="loader">
+        <img src="loader.gif" alt="Loading" >
+        <div></div>
+    </div>
+
+</div>
+
+
+<div class="modal product_view" id="product_view">
+    <div class="modal-dialog">
+        <div class="modal-content" id="ModalMain">
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="alert-messages text-center">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BootStarp -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDEsL6stJ4-PQ2LV-rzvzWFGHHxmhSqVDs",
+        authDomain: "pakistan-olx-1.firebaseapp.com",
+        databaseURL: "https://pakistan-olx-1.firebaseio.com",
+        projectId: "pakistan-olx-1",
+        storageBucket: "pakistan-olx-1.appspot.com",
+        messagingSenderId: "719427536807"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>

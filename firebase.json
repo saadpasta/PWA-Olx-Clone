@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "predeploy": [
+      "npm --prefix ./functions run lint"
+    ],
+    "source": "functions"
+  },
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

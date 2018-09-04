@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <!-- Css -->
+     <link rel="stylesheet" href="account.css">
+
+     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body id="body">
+    
+        <div class="FullpageAccount" id="FullpageAccount">
+                <div class="header">
+            
+                        <a href="../index.html"><img src="../Images/logo.png" height="75px" width="75px"></a>
+                        <h3 id="title">Pakistan Largest Market Place</h3>
+                    
+                    <button class="SubmitAD" onclick="window.location='../Submit Add/ad.html'">Submit An Ad</button>
+                    <button class="SubmitAD" onclick="window.location='../Message/messageMain.html'">My Messages</button>
+                    <button class="SubmitAD" onclick="window.location.href='#userFav'">Fav Ads</button>
+                    <button class="SubmitAD" onclick="logout()">Logout</button>
+
+                </div>
+        
+                <hr>
+
+                <!-- User ADs -->
+                <div class="titleDiv container">
+                <h1 id="welcomeName"></h1>
+                <h1>Your Ads</h1>
+                 </div>
+
+                 <div class="userAds container" id="userAds">
+
+                  
+                    
+                 </div>
+                <!-- User ADs -->
+
+
+                 <!-- Users Fav -->
+                 <div class="titleDiv container">
+                    <h1>Favorite Ads</h1>
+    
+                     </div>
+    
+                     <div class="userAds container" id="userFav">
+    
+                    
+
+    
+                        
+    
+                     </div>
+                 <!-- Users Fav -->
+
+                 
+                
+</div>
+
+
+
+
+
+
+<div class="modal product_view" id="product_view">
+    <div class="modal-dialog">
+        <div class="modal-content" id="ModalMain">
+
+        </div>
+    </div>
+
+</div>
+
+
+      
+<div class="loader" style="display: none;" id="loader">
+    <img src="../loader.gif" alt="Loading" >
+    <div></div>
+</div>
+
+
+
+
+<div class="alert-messages text-center">
+</div>
+
+
+
+</div>
+
+    
+
+<!-- BootStarp -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDEsL6stJ4-PQ2LV-rzvzWFGHHxmhSqVDs",
+        authDomain: "pakistan-olx-1.firebaseapp.com",
+        databaseURL: "https://pakistan-olx-1.firebaseio.com",
+        projectId: "pakistan-olx-1",
+        storageBucket: "pakistan-olx-1.appspot.com",
+        messagingSenderId: "719427536807"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="account.js"></script>
+</body>
+</html>

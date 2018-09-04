@@ -1,0 +1,242 @@
+[debug] [2018-07-19T08:18:58.530Z] ----------------------------------------------------------------------
+[debug] [2018-07-19T08:18:58.533Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\VS\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-07-19T08:18:58.534Z] CLI Version:   3.19.3
+[debug] [2018-07-19T08:18:58.534Z] Platform:      win32
+[debug] [2018-07-19T08:18:58.534Z] Node Version:  v8.9.4
+[debug] [2018-07-19T08:18:58.534Z] Time:          Thu Jul 19 2018 13:18:58 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-19T08:18:58.534Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-19T08:18:58.545Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-19T08:18:58.545Z] > authorizing via signed-in user
+[debug] [2018-07-19T08:18:58.548Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/pakistan-olx-1  
+  
+ Thu Jul 19 2018 13:18:58 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-19T08:19:00.074Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-19T08:19:00.075Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/pakistan-olx-1/tokens  
+  
+ Thu Jul 19 2018 13:19:00 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-19T08:19:01.586Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'pakistan-olx-1'...
+[info] 
+[info] i  deploying functions, hosting
+[info] Running command: npm --prefix ./functions run lint
+[info] +  functions: Finished running predeploy script.
+[debug] [2018-07-19T08:19:10.982Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "~5.12.1",
+    "firebase-functions": "^1.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "eslint-plugin-promise": "^3.6.0"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-07-19T08:19:10.983Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/pakistan-olx-1?view=CONSUMER_VIEW  
+  
+ Thu Jul 19 2018 13:19:10 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-19T08:19:10.983Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/pakistan-olx-1?view=CONSUMER_VIEW  
+  
+ Thu Jul 19 2018 13:19:10 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-19T08:19:12.611Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-19T08:19:12.851Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2018-07-19T08:19:12.854Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/pakistan-olx-1  
+  
+ Thu Jul 19 2018 13:19:12 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-19T08:19:14.186Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-19T08:19:14.186Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/719427536807:getServerAppConfig  
+  
+ Thu Jul 19 2018 13:19:14 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-19T08:19:15.433Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2018-07-19T08:19:15.437Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/pakistan-olx-1/configs  
+  
+ Thu Jul 19 2018 13:19:15 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-19T08:19:18.310Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (50.06 KB) for uploading
+[debug] [2018-07-19T08:19:18.676Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/pakistan-olx-1/locations/us-central1/functions:generateUploadUrl  
+  
+ Thu Jul 19 2018 13:19:18 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-19T08:19:20.046Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-19T08:19:20.046Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-3d562934-df3e-4098-8071-09a85010c797/79db57e5-63f9-4399-a8d1-ec3e77df8554.zip?GoogleAccessId=service-719427536807@gcf-admin-robot.iam.gserviceaccount.com&Expires=1531990161&Signature=n7%2BQsk4GbcrPW02kV%2BT7VbmMjaBmHrAxoKOn%2B4aeS2%2FAnHmJoONJMm4zmxLGx1jwtB4Rhlz5uUqLTI427dx%2FuiCFSFBhJ0pznJyxCwd9teiMAxlS5re%2BpLHJzPeIAu%2B%2F5olyx1wTsVVaItMgCcPqSD1lBqbL8ZbCLmj8nhBhvd6tESuyAOCtg3ostqIJF%2FNBEncEu57tkz8eoTA17QWFzYo9g8t0qEYBl%2FqhkIV029mrJ7%2B%2FOBUeL6MphiT2A5Vnpr4Cez4P7%2FyNJjsDPTIPpUxxCaKk7YtUcKM30m4NB%2FKrDkUAp6T218fMeVBJbjord8Unb0K00KnaVN3he24VfQ%3D%3D  
+ ReadStream {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 65536,
+     buffer: BufferList { head: [Object], tail: [Object], length: 1 },
+     length: 51259,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: true,
+     endEmitted: false,
+     reading: false,
+     sync: false,
+     needReadable: false,
+     emittedReadable: true,
+     readableListening: false,
+     resumeScheduled: false,
+     destroyed: false,
+     defaultEncoding: 'utf8',
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'C:\\Users\\VS\\AppData\\Local\\Temp\\firebase-functions-5860it3Q9y0DXpCW.zip',
+  fd: 5,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: undefined,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 51259 } 
+ Thu Jul 19 2018 13:19:20 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-19T08:19:28.566Z] <<< HTTP RESPONSE 200
+[info] +  functions: functions folder uploaded successfully
+[info] i  hosting: preparing . directory for upload...
+[debug] [2018-07-19T08:19:29.185Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/pakistan-olx-1/uploads/-LHlbn3UmVG5ENCtp7oe?fileCount=116&message=  
+  
+ Thu Jul 19 2018 13:19:29 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-19T08:25:18.996Z] Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1055:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: Server Error. socket hang up
+[debug] [2018-07-20T07:51:23.027Z] ----------------------------------------------------------------------
+[debug] [2018-07-20T07:51:23.042Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\VS\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-07-20T07:51:23.042Z] CLI Version:   3.19.3
+[debug] [2018-07-20T07:51:23.042Z] Platform:      win32
+[debug] [2018-07-20T07:51:23.042Z] Node Version:  v8.9.4
+[debug] [2018-07-20T07:51:23.042Z] Time:          Fri Jul 20 2018 12:51:23 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-20T07:51:23.042Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-20T07:51:23.042Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-20T07:51:23.042Z] > authorizing via signed-in user
+[debug] [2018-07-20T07:51:23.042Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/pakistan-olx-1  
+  
+ Fri Jul 20 2018 12:51:23 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-20T07:51:24.072Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-20T07:51:24.072Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/pakistan-olx-1/tokens  
+  
+ Fri Jul 20 2018 12:51:24 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-20T07:51:41.513Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'pakistan-olx-1'...
+[info] 
+[info] i  deploying functions, hosting
+[info] Running command: npm --prefix ./functions run lint
+[info] +  functions: Finished running predeploy script.
+[debug] [2018-07-20T07:52:24.912Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "~5.12.1",
+    "firebase-functions": "^1.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "eslint-plugin-promise": "^3.6.0"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-07-20T07:52:24.912Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/pakistan-olx-1?view=CONSUMER_VIEW  
+  
+ Fri Jul 20 2018 12:52:24 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-20T07:52:24.912Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/pakistan-olx-1?view=CONSUMER_VIEW  
+  
+ Fri Jul 20 2018 12:52:24 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-20T07:52:28.515Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2018-07-20T07:52:29.420Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-20T07:52:29.420Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/pakistan-olx-1  
+  
+ Fri Jul 20 2018 12:52:29 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-20T07:52:32.291Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-20T07:52:32.291Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/719427536807:getServerAppConfig  
+  
+ Fri Jul 20 2018 12:52:32 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-20T07:52:33.195Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2018-07-20T07:52:33.195Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/pakistan-olx-1/configs  
+  
+ Fri Jul 20 2018 12:52:33 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-20T07:52:34.880Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (50.06 KB) for uploading
+[debug] [2018-07-20T07:52:35.504Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/pakistan-olx-1/locations/us-central1/functions:generateUploadUrl  
+  
+ Fri Jul 20 2018 12:52:35 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-07-20T07:52:37.361Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-20T07:52:37.361Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-3d562934-df3e-4098-8071-09a85010c797/e503fd76-723d-4a14-8dba-8a2916c498a2.zip?GoogleAccessId=service-719427536807@gcf-admin-robot.iam.gserviceaccount.com&Expires=1532074958&Signature=EeAmz6Uka4z0lnDxitrnO5uPP7vSyi3mknMXRTuuent%2FHMeFfw0jFUE%2FcnTIegVnSSQXP%2BOqU1hrce60gcf85VssH%2B2IHCo8VSDweDPmlF5mYhvx5L5JhYOQd5lS2Z8OXUYByDzOVGjOy3Yku1kNb%2FLfjrO3VjPwJpUpjUEnhnWnwPWGOFV2Y63xyOmuSLIi%2FTAt9cPoGBOMBX8g0LrYwlkrM0zRx%2BbL8bvgUb3UX3%2BzXnBYftEKRR9NiIcVjGRLOPNKs0guZSC2IZ1mtzTdXAzUrtMIbSgsVSfuGZ4DMYWWeAkGCax5TiXE3KuyJ%2B43Ll%2BveQ5pNtKskPkC0Qdhgw%3D%3D  
+ ReadStream {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 65536,
+     buffer: BufferList { head: [Object], tail: [Object], length: 1 },
+     length: 51259,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: true,
+     endEmitted: false,
+     reading: false,
+     sync: false,
+     needReadable: false,
+     emittedReadable: true,
+     readableListening: false,
+     resumeScheduled: false,
+     destroyed: false,
+     defaultEncoding: 'utf8',
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'C:\\Users\\VS\\AppData\\Local\\Temp\\firebase-functions-2024p35PVhqTP0l1.zip',
+  fd: 5,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: undefined,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 51259 } 
+ Fri Jul 20 2018 12:52:37 GMT+0500 (Pakistan Standard Time)

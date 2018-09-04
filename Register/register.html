@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <!-- Css -->
+     <link rel="stylesheet" href="register.css">
+     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+       
+</head>
+<body>
+  <div class="Fullpage">
+    <div class="header container">
+            
+      <a href="../index.html"><img src="../Images/logo.png" height="100px" width="100px"></a>
+      <h3 id="title">Pakistan Largest Market Place</h3>
+  
+  <button class="account" onclick="window.location='account.html'">My Account</button>
+  <button class="SubmitAD" onclick="window.location='../Submit Add/ad.html'">Submit  Ad</button>
+
+</div>
+    
+    
+    <div class="container jumbotron Main">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+  
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" id="email" >
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password"  id="password" >
+      <p id="error"></p>
+
+      <div class="clearfix">
+        
+        <button onClick="signUp()" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+
+<!-- BootStarp -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+
+    <!-- Firebase -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDEsL6stJ4-PQ2LV-rzvzWFGHHxmhSqVDs",
+        authDomain: "pakistan-olx-1.firebaseapp.com",
+        databaseURL: "https://pakistan-olx-1.firebaseio.com",
+        projectId: "pakistan-olx-1",
+        storageBucket: "pakistan-olx-1.appspot.com",
+        messagingSenderId: "719427536807"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="register.js"></script>
+</body>
+</html>

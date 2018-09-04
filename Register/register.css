@@ -1,0 +1,157 @@
+@font-face {
+  font-family: myFont;
+  src: url(../fonts/font.woff2);
+}
+
+body{
+font-family: myfont;
+}
+
+
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+
+/* Header Start */
+ 
+.header{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
+
+
+#title{
+  
+      align-self: center;
+      padding-left: 10px;
+} 
+
+#Account{
+
+  height: 100px;
+  width:100px
+}
+
+
+.account{
+
+height: 50px;
+width: 130px;
+
+align-self:center;
+background: transparent;
+border: 2px solid lightgray;
+color: #2f73d8;
+border-radius: 5px;
+}
+
+.SubmitAD{
+
+  height: 55px;
+  width: 125px;
+  
+  align-self:center;
+  background: transparent;
+  border: 2px solid lightgray;
+  color: #ff8300;
+  border-radius: 5px;
+
+
+}
+
+
+.SubmitADfOOT{
+
+  height: 50px;
+  width: 200px;
+  
+  align-self:center;
+  background: transparent;
+  border: 2px solid lightgray;
+  color: #ff8300;
+  border-radius: 5px;
+
+
+}
+
+#SignInTitle{
+  text-align: center;
+}
+.Main{
+  display: flex;
+  flex-direction: column;
+  align-content:  center ;
+
+}
+

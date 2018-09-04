@@ -1,0 +1,134 @@
+@font-face {
+  font-family: myFont;
+  src: url(../fonts/font.woff2);
+}
+
+body{
+font-family: myfont;
+}
+
+/* Header Start */
+ 
+.header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  
+  
+  #title{
+    
+        align-self: center;
+        padding-left: 10px;
+  } 
+  
+  #Account{
+  
+    height: 100px;
+    width:100px
+  }
+  
+  
+  .account{
+  
+  height: 50px;
+  width: 120px;
+  
+  align-self:center;
+  background: transparent;
+  border: 2px solid lightgray;
+  color: #2f73d8;
+  border-radius: 5px;
+  }
+  
+  .SubmitAD{
+  
+    height: 50px;
+    width: 120px;
+    
+    align-self:center;
+    background: transparent;
+    border: 2px solid lightgray;
+    color: #ff8300;
+    border-radius: 5px;
+  
+  
+  }
+  
+  #SignInTitle{
+    text-align: center;
+}
+  /* Header End */
+
+
+
+  
+
+hr {
+    border: 1px solid #c2040400;
+    margin-bottom: 25px;
+  }
+  
+  #welcomeName{
+
+    
+    display: none;
+  }
+
+  .AdFormMain{
+
+    background-color:#e69035;
+    opacity: 0.9;
+    padding: 50px;
+    border-radius: 10px;
+  }
+
+  #title2{
+      margin-left: 70px;
+  }
+
+
+
+#AdDescriptionTextArea{
+  margin-left: 20px;
+box-shadow: 0 2px 0 #e6e6e6;
+height: 40px;
+padding-left: 10px;
+width: 650px;
+height: 200px;  
+}
+
+#error{
+
+    color: red;
+    font-size: 22px;
+    display: none;
+}
+
+
+
+
+/* Loader */
+.loader {
+  background: none repeat scroll 0 0 rgb(252, 252, 252);
+  position: fixed;
+ 
+  opacity: 0.5;
+  z-index: 1000001; 
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+      
+  }
+  
+  .loader img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin: -500px 0px 0px -100px;
+  width: 200px;
+  
+  }
+/* Loader */

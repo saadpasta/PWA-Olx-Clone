@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX</title>
+    
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+     <!-- Css -->
+     <link rel="stylesheet" href="login.css">
+     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+       
+</head>
+<body>
+    
+    
+
+        <div class="Fullpage">
+          <div class="header container">
+            
+            <a href="../index.html"><img src="../Images/logo.png" height="100px" width="100px"></a>
+            <h3 id="title">Pakistan Largest Market Place</h3>
+        
+        <button class="account" onclick="window.location='../My account/account.html'">Account</button>
+        <button class="SubmitAD" onclick="window.location='../Submit Add/ad.html'">SubmitAd</button>
+      
+      </div>
+        </div>
+        
+                
+                
+                <div class="container jumbotron Main">
+                  <h1 id="SignInTitle">Sign In</h1>
+                  <hr>
+              
+                  <div class="loginForm jumbotron">
+                  <label for="username"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email"  id="email" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password"  id="password" >
+                  <p id="error">Error</p>
+                    
+
+                  <a href="../Register/register.html">Create An Account</a>
+                  <div class="clearfix">
+                    
+                    <button onClick="login()" class="signupbtn">Sign In</button>
+                  </div>
+                </div>
+            </div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+    
+
+<!-- BootStarp -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDEsL6stJ4-PQ2LV-rzvzWFGHHxmhSqVDs",
+        authDomain: "pakistan-olx-1.firebaseapp.com",
+        databaseURL: "https://pakistan-olx-1.firebaseio.com",
+        projectId: "pakistan-olx-1",
+        storageBucket: "pakistan-olx-1.appspot.com",
+        messagingSenderId: "719427536807"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="login.js"></script>
+</body>
+</html>
