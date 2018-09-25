@@ -1,9 +1,7 @@
 # PWA-Olx-app
 OLX Progressive web App
 
-First OF All RUN NPM Install
-
-#Functionality:#  
+## Functionality:  
 1.Signup/Signin  
 2.Categories  of  Ads  --  Single  Level  categories    
 3.Search  Ads  
@@ -15,7 +13,7 @@ First OF All RUN NPM Install
 9.Push  notification  when  Buyer  or  seller  send  message
 
 
-#Progressive  web  app  features:#  
+## Progressive  web  app  features:  
 1.Add  to  Home  screen  popup  
 2.Manifest.json 
 3.Offline  availability  with service-worker.js 
