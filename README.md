@@ -1,5 +1,5 @@
-# PWA-Olx-app
-OLX Progressive web App
+# OLX PWA APP ❤️
+## Build with vanillaJs
 
 ## Functionality:  
 1.Signup/Signin  
